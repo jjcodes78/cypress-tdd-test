@@ -1,0 +1,15 @@
+{
+  "name": "cypress-tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^6.3.1",
+    "cypress": "^9.6.1"
+  }
+}
