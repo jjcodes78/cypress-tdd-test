@@ -1,8 +1,7 @@
 import {ELEMENTS as el} from "./elements";
-import User from "../../models/User";
 
 class CreateAccountPage {
-    preencheForm() {
+    preencheForm(User) {
         cy.get(el.customerFirstName).type(User.firstName)
         cy.get(el.customerLastName).type(User.lastName)
         cy.get(el.password).type(User.password)

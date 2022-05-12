@@ -1,8 +1,7 @@
 import {ELEMENTS as el} from "./elements";
-import User from "../../models/User";
 
 class AuthPage {
-    preencheUmNovoEmailEConfirma() {
+    preencheUmNovoEmailEConfirma(User) {
         cy.get(el.emailInput).type(User.email)
         cy.get(el.createAccountButton).click()
     }

@@ -1,8 +1,7 @@
 import {ELEMENTS as el} from "./elements";
-import User from "../../models/User";
 
 class MyAccount {
-    verificaSeEstaNaPaginaDoUsuario() {
+    verificaSeEstaNaPaginaDoUsuario(User) {
         cy.get(el.userName).should('have.text', User.firstName + ' ' + User.lastName)
     }
 }
